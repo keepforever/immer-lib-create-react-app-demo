@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import produce from "immer";
 import { v4 as uuid } from "uuid";
 import "./App.css";
+import Crud from './comps/Crud'
 
 export default class App extends Component {
   nameRef = React.createRef();
@@ -127,6 +128,16 @@ export default class App extends Component {
           <input ref={this.nameRef} placeholder="Attendee's name" required />
           <button>Add</button>
         </form>
+        <br/>
+        <hr/>
+        <hr/>
+        <hr/>
+        <br/>
+        <h1>
+          CRUD
+        </h1>
+        <Crud />
+
       </div>
     );
   }
